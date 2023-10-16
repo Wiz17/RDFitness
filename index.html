@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDFitness</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div
+      id="loading"
+      style="
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      "
+    >
+      <div class="opposites">
+        <div class="opposites bl"></div>
+        <div class="opposites tr"></div>
+        <div class="opposites br"></div>
+        <div class="opposites tl"></div>
+      </div>
+    </div>
+    <div id="web">
+      <nav class="nav">
+        <div class="nav-div">
+          <a href="index.html">
+            <!-- src="../Resources/RD Fitness Logo.jpg" -->
+
+            <div class="logo" style="display: flex">
+              <img
+                src="./Resources/RD Fitness Logo.jpg"
+                width="60px"
+                height="50px"
+                alt=""
+                style="margin-top: 5px"
+              />
+              <div
+                class="vl"
+                style="margin-left: 10px; margin-right: 10px"
+              ></div>
+              <div style="color: #86c232; font-weight: bold">
+                <p>RD</p>
+                <p>FITNESS</p>
+                <p>ZONE</p>
+              </div>
+            </div>
+          </a>
+          <div class="nav-contents">
+            <ul class="nav-contents-list">
+              <!-- <a href="../Home/index.html" class="nav-links"> -->
+                <a href="index.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">Home</li></a
+              >
+              <!-- <a href="../Aboutus/aboutus.html" class="nav-links"> -->
+                <a href="aboutus.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  About us
+                </li></a
+              >
+              <!-- <a href="../Gallery/gallery.html" class="nav-links"> -->
+                <a href="gallery.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Gallery
+                </li></a
+              >
+              <a href="contact.html" class="nav-links">
+              <!-- <a href="../Contact/contact.html" class="nav-links"> -->
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Contact
+                </li></a
+              >
+            </ul>
+            <div class="burger">
+              <i class="fa fa-bars burger-icon" onclick="openNav()"></i>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <!-- <a href="../Home/index.html">Home</a> -->
+              <a href="index.html">Home</a>
+
+              <!-- <a href="../Aboutus/aboutus.html">About us</a> -->
+              <a href="aboutus.html">About us</a>
+
+              <!-- <a href="../Gallery/gallery.html">Gallery</a> -->
+              <a href="gallery.html">About us</a>
+
+              <!-- <a href="../Contact/contact.html">Contact</a> -->
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div style="max-width:1400px"> -->
+
+      <section>
+        <div class="header">
+          <!-- style="background-image: linear-gradient(rgba(0, 0, 0, 0.748), rgba(0, 0, 0, 0.94)), url('https://images7.alphacoders.com/130/1300550.jpg');"> -->
+
+          <!-- <div> -->
+          <img
+            src="./Resources/home_header_img.jpg"
+            class="cover-img"
+            alt=""
+          />
+          <!-- </div> -->
+          <div class="header-resp-max-scr">
+            <div style="max-width: 1400px">
+              <div class="header-text">
+                <div class="header-text-1">
+                  <i style="font-weight: 900" data-aos="fade-right">
+                    <p
+                      class="header-gym-name"
+                      style="
+                        color: #86c232;
+                        font-weight: bold;
+
+                        background-color: black;
+                        width: 170px;
+                        padding: 10px;
+                        border-radius: 10px;
+                      "
+                    >
+                      RD FITNESS ZONE,
+                    </p>
+
+                    <p style="color: #86c232" class="opa header-text-op-0">
+                      YOUR FITNESS
+                    </p>
+
+                    <p style="color: white" class="opa header-text-op-0">
+                      DESTINATION FOR
+                    </p>
+                    <p style="color: white" class="opa header-text-op-0">
+                      GOALS AND TURNED GAINS.
+                    </p>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section-max-scr-resp">
+        <div style="max-width: 1400px">
+          <section>
+            <div
+              class="home-content-1"
+              style="background-color: #474b4f; padding: 20px 0 80px 0"
+            >
+              <p
+                class="features-header"
+                style="
+                  color: white;
+                  text-align: center;
+                  font-weight: 800;
+                  padding: 40px 20px 20px 20px;
+                "
+                data-aos="fade-right"
+              >
+                FEATURES WE OFFER
+              </p>
+              <div class="cards-resp">
+                <div class="cards">
+                  <div class="card-1" data-aos="zoom-in" style="margin: 10px">
+                    <div
+                      class="card-1-content"
+                      style="
+                        margin: 0 10px 0 10px;
+                        padding: 60px 40px 60px 40px;
+                      "
+                    >
+                      <p
+                        style="
+                          font-size: 20px;
+                          font-weight: 800;
+                          margin: 20px 0 20px 0;
+                          color: #86c232;
+                        "
+                      >
+                        Personalized Training
+                      </p>
+                      <p>
+                        Discover the power of custom workouts designed to match
+                        your goals, abilities, and preferences for a fitness
+                        experience that's uniquely yours.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-1" data-aos="zoom-in" style="margin: 10px">
+                    <div
+                      class="card-1-content"
+                      style="
+                        margin: 0 10px 0 10px;
+                        padding: 60px 40px 60px 40px;
+                      "
+                    >
+                      <p
+                        style="
+                          font-size: 20px;
+                          font-weight: 800;
+                          margin: 20px 0 20px 0;
+                          color: #86c232;
+                        "
+                      >
+                        Diet & Nutrition
+                      </p>
+                      <p>
+                        Diet & Nutrition Guidance. Unlock your full potential
+                        with our expert advice on balanced nutrition, helping
+                        you optimize your performance and achieve your health
+                        and fitness goals.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-1" data-aos="zoom-in" style="margin: 10px">
+                    <div
+                      class="card-1-content"
+                      style="
+                        margin: 0 10px 0 10px;
+                        padding: 60px 40px 60px 40px;
+                      "
+                    >
+                      <p
+                        style="
+                          font-size: 20px;
+                          font-weight: 800;
+                          margin: 20px 0 20px 0;
+                          color: #86c232;
+                        "
+                      >
+                        Best Equipments
+                      </p>
+                      <p>
+                        Elevate Your Workouts with Premium Equipment. Our gym is
+                        equipped with the latest and best fitness gear, ensuring
+                        you have the tools you need to reach your fitness
+                        aspirations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section  >
+            <div class="routines"  >
+              <div style="margin-left: 20px" class="load header-text-op-0" >
+                <h1 class="routines-head-text" style="color: #82c232">WE</h1>
+                <h1 class="routines-head-text" style="color: #82c232">TAKE</h1>
+                <h1 class="routines-head-text" style="color: #82c232">
+                  CARE OF...
+                </h1>
+                <!-- <h1 class="routines-head-text" style="color: #82c232">
+              DURING WORKOUT
+            </h1> -->
+
+                <p class="routines-1-1" style="color: white; font-size: 20px">
+                  Everybody is different thats why we <br />
+                  choose plan which work best for you.
+                </p>
+              </div>
+              <div style="margin-left: 20px" class="load header-text-op-0"  >
+                <div class="routines-1" >
+                  <h1 style="color: #82c232; font-size: 30px">Slow & Steady</h1>
+                  <p class="font-adj" style="color: white">
+                    Embrace the power of slow and steady progress in your
+                    workout routines every rep, every breath, a step towards
+                    lasting transformation.
+                  </p>
+                </div>
+                <div class="routines-2" style="margin-top: 20px">
+                  <h1 style="color: #82c232; font-size: 30px">
+                    Train Like a Champ
+                  </h1>
+                  <p class="font-adj" style="color: white">
+                    Transform ordinary sweat into extraordinary results as you
+                    embrace workout routines designed to ignite your inner
+                    champion.
+                  </p>
+                </div>
+                <div class="routines-2" style="margin-top: 20px">
+                  <h1 style="color: #82c232; font-size: 30px">
+                    Maintain a Gain
+                  </h1>
+                  <p class="font-adj" style="color: white">
+                    Master the art of workout routines that not only help you
+                    gain strength and endurance but also ensure you maintain
+                    your hard-earned progress.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div
+              class="home-content-2"
+              style="
+                height: 100%;
+                background-color: #222629;
+                padding: 20px 0 20px 0;
+              "
+            >
+              <p
+                class="features-header"
+                style="
+                  color: white;
+                  text-align: center;
+                  font-weight: 800;
+                  padding: 40px 20px 20px 20px;
+                "
+                data-aos="fade-right"
+              >
+                OUR WORKOUT ROUTINES
+              </p>
+              <div style="display: flex; justify-content: center">
+                <div class="cards">
+                  <div
+                    style="
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                    "
+                  >
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/cardio_home.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption></figcaption>
+                      <figcaption>Cardio</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/zumba_home.png"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption>Zumba Dance</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/weight_training_home.png"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption>Weight Training</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/crossfit_home.png"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption>Crossfit</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/yoga_home.jpg"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption>Yoga</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up">
+                      <img
+                        src="./Resources/meditation_home.png"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                        alt="Image"
+                      />
+                      <figcaption>Meditation</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- https://img.freepik.com/premium-photo/explore-dark-gym-interior-featuring-sleek-black-dumbbells_60438-2934.jpg -->
+          <footer>
+            <div class="footer">
+              <div style="padding: 15px">
+                <div style="display: flex; padding-bottom: 15px">
+                  <img
+                    src="./Resources/RD Fitness Logo.jpg"
+                    width="60px"
+                    height="50px"
+                    alt=""
+                    style="margin-top: 5px"
+                  />
+                  <div
+                    class="vl"
+                    style="margin-left: 10px; margin-right: 10px"
+                  ></div>
+                  <div style="color: #86c232; font-weight: bold">
+                    <p>RD</p>
+                    <p>FITNESS</p>
+                    <p>ZONE</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="footer-text">
+                    <i
+                      class="fa fa-phone"
+                      style="color: #86c232"
+                      aria-hidden="true"
+                    ></i>
+                    <span>+91 9595441100</span>
+                  </div>
+                  <div class="footer-text">
+                    <i class="fa-brands fa-whatsapp" style="color: #86c232"></i>
+                    +91 9595191100
+                  </div>
+                  <div class="footer-text">
+                    <i
+                      class="fa fa-envelope"
+                      style="color: #86c232"
+                      aria-hidden="true"
+                    ></i>
+                    RD99@yahoo.com
+                  </div>
+                  <div class="footer-text">
+                    <i
+                      class="fa fa-map-marker"
+                      style="color: #86c232"
+                      aria-hidden="true"
+                    ></i>
+                    Shreeram Tower ,3rd Floor,Kolki-Shingnapur
+                    Rd,Phaltan,Dist.Satara-415523
+                  </div>
+                </div>
+              </div>
+              <div class="footer-end" style="margin-top: 20px">
+                <p style="color: white; text-align: center">
+                  All rights reserved | Copyright ©RD Fitness Zone
+                </p>
+                <p style="color: white; text-align: center; margin-top: 20px">
+                  Developed by saifm170701@gmail.com
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+  </body>
+  <script src="./script.js"></script>
+</html>

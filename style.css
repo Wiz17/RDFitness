@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  body{
+    background-color: #f1f1f1;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s;
+    z-index: 99;
+    /* box-shadow: 1px 1px 10px 1px; */
+  }
+  .nav-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  .nav-contents-list {
+    display: none;
+  }
+  .nav-content-list-1 {
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color:white;
+
+    cursor: pointer;
+  }
+  .nav-content-list-1:hover{
+    color:#86C232;
+  }
+  .logo {
+    padding: 15px;
+    /* font-size: 30px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px; */
+    cursor: pointer;
+
+  }
+  
+  .nav-contents {
+    margin-right: 20px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .burger-icon {
+    padding: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+  .burger-icon:hover{
+    color:#86C232
+  }
+  .vl {
+    border-left: 1px solid white;
+    
+  }
+
+  @media all and (min-width: 1022px){
+
+
+    .nav-contents-list {
+      list-style-type: none;
+      display: flex;
+    }
+    .burger{
+      display: none;
+    }
+  
+  }
+
+  .header-text{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color:rgb(0 0 0 / 45%);
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .header{
+    height: 100vh;
+    
+
+  }
+  .cover-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* bottom:-10; */
+    z-index: -1;
+  }
+  .header-text-op-1{
+    transition: opacity 1s ease;
+
+    opacity: 1;
+  }
+  .header-text-1{
+    margin-left: 50px;
+  }
+  .opa{
+    font-size:50px ;
+  }
+
+@media all and (min-width: 500px) and (max-width: 700px) {
+
+    .header-text-1{
+        margin-left: 20px;
+      }
+      
+}
+/* .card-1:hover{
+
+    background-color: #86C232;
+    color: black;
+} */
+.card-1{
+
+    background-color: black;
+    color: white;
+}
+
+figure {
+    display: grid;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    cursor: pointer;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size:30px;
+    font-weight: 700;
+    color: #86C232;
+    padding: .75rem;
+    background: linear-gradient(transparent,black);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    /* -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0); */
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+    --_i: 0%;
+  
+  }
+  /* figure figcaption:hover {
+
+    color: #86C232;
+
+  } */
+  .routines{
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.748), rgba(0, 0, 0, 0.94)), url('./Resources/barbell_home.jpg');
+    /* background-size: cover; */
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  }
+  .routines-head-text{
+    font-size: 50px;
+  
+  }
+@media all and (min-width: 150px) and (max-width: 700px) {
+  .routines-1-1{
+    display: none;
+  }
+  .routines-head-text{
+    font-size: 35px;
+
+  }
+  /* .font-adj{
+    font-size: 15px;
+  } */
+  }
+  @media all and (min-width: 701px) and (max-width: 2000px) {
+    .routines{
+      display: flex;
+    }
+    .load{
+      width: 50%;
+    }
+    /* .font-adj{
+      font-size: 20px;
+    } */
+  }
+
+  /* //////////////////footer////////////////// */
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./Resources/footer_img.png");
+  /* height: 100%; */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.footer-text {
+  color: white;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.footer-end {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.footer-img {
+  width: 300px;
+}
+@media all and (min-width: 150px) and (max-width: 700px) {
+  .footer-text {
+    font-size: 15px;
+  }
+  .footer-img {
+    width: 200px;
+  }
+  .routines-1{
+    margin-top: 15px;
+  }
+}
+@media all and (min-width: 701px)  {
+  .routines {
+    display: flex;
+  }
+  .load {
+    width: 50%;
+  }
+  /* .font-adj {
+    font-size: 20px;
+  } */
+}
+/* //////////////////////////////////////////////////\ */
+/* ////////////////////some additional responsive changes'//////////////// */
+
+@media all and (min-width:500px) and (max-width:700px){
+  .opa{
+    font-size: 35px;
+  }
+  
+
+}
+@media all and (min-width:500px) and (max-width:1500px){
+.header-gym-name{
+  margin-left: 8px;
+
+}
+}
+@media all and (min-width:150px) and (max-width:500px){
+  .opa{
+    font-size: 25px;
+  }
+.header-text-1{
+  margin-left:0;
+  padding-left:10px
+}
+
+}
+
+@media all and (min-width:700px) and (max-width:920px){
+  .opa{
+    font-size:40px;
+  }
+}
+@media all and (min-width:150px) and (max-width:800px){
+
+  .cards-resp{
+    display: flex;
+    justify-content: center;
+  }
+  .cards{
+    width: 80%;
+  }
+}
+@media all and (min-width:150px) and (max-width:600px){
+
+  .cards{
+    width: 95%;
+  }
+
+  .features-header{
+    font-size: 35px;
+  }
+  .header{
+    height: 80vh;
+    
+
+  }
+  .routines{
+    padding:40px 10px 40px 10px
+  }
+}
+@media all and (min-width:601px){
+  .features-header{
+    font-size: 40px;
+  }
+}
+@media all and (min-width:601px){
+  
+  .header{
+    height: 100vh;
+    
+
+  }
+  .routines{
+    padding:60px 70px 60px 70px;
+  }
+}
+
+@media all and (min-width:801px) {
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+}
+@media all and (min-width:1400px){
+
+  .header-resp-max-scr{
+     display: flex;
+     justify-content: center;
+     background-color: rgb(0 0 0 / 45%);
+     
+  }
+  .header-text{
+     background-color: transparent;
+  }
+  .section-max-scr-resp{
+    display: flex;
+     justify-content: center;
+     background-color: #424447;
+  }
+}
+/* ////////////////////some additional responsive changes'//////////////// */
+/* /////////////css for loading///////////////// */
+.opposites {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  
+}
+.opposites {
+  animation: opposites 2.5s ease-out 0s infinite;  
+}
+.tl, .tr, .br, .bl {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.tl, .tr {
+  top: 0; 
+}
+.tr, .br {
+  left: 30px; 
+}
+.tl, .br {
+  animation: tlbr 2.5s ease-out 0s infinite;
+}
+.br, .bl {
+  top: 30px; 
+}
+.tl, .bl {
+  left: 0; 
+}
+.tr, .bl {
+  animation: trbl 2.5s ease-out 0s infinite;
+}
+.tl {
+  background: red;
+  transform-origin: bottom right;
+}
+.tr {
+  background: green; 
+  transform-origin: bottom left;
+}
+.br {
+  background: dodgerblue; 
+  transform-origin: top left;
+}
+.bl {
+  background: gold; 
+  transform-origin: top right;
+}
+
+@keyframes tlbr {
+  0% {transform: rotate(0);}
+  20% {transform: rotate(90deg);}
+  40% {transform: rotate(90deg);}
+  60% {transform: rotate(0);}
+}
+@keyframes trbl {
+  20% {transform: rotate(0);}
+  40% {transform: rotate(90deg);}
+  60% {transform: rotate(90deg);}
+  80% {transform: rotate(0);}
+}
+@keyframes opposites {
+  80% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+

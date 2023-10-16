@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./styleg.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body style="background-color: #222629">
+    <div
+      id="loading"
+      style="
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      "
+    >
+      <div class="opposites">
+        <div class="opposites bl"></div>
+        <div class="opposites tr"></div>
+        <div class="opposites br"></div>
+        <div class="opposites tl"></div>
+      </div>
+    </div>
+    <div id="web">
+      <nav class="nav">
+        <div class="nav-div">
+          <a href="index.html">
+            <!-- src="../Resources/RD Fitness Logo.jpg" -->
+
+            <div class="logo" style="display: flex">
+              <img
+                src="./Resources/RD Fitness Logo.jpg"
+                width="60px"
+                height="50px"
+                alt=""
+                style="margin-top: 5px"
+              />
+              <div
+                class="vl"
+                style="margin-left: 10px; margin-right: 10px"
+              ></div>
+              <div style="color: #86c232; font-weight: bold">
+                <p>RD</p>
+                <p>FITNESS</p>
+                <p>ZONE</p>
+              </div>
+            </div>
+          </a>
+          <div class="nav-contents">
+            <ul class="nav-contents-list">
+              <!-- <a href="../Home/index.html" class="nav-links"> -->
+                <a href="index.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">Home</li></a
+              >
+              <!-- <a href="../Aboutus/aboutus.html" class="nav-links"> -->
+                <a href="aboutus.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  About us
+                </li></a
+              >
+              <!-- <a href="../Gallery/gallery.html" class="nav-links"> -->
+                <a href="gallery.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Gallery
+                </li></a
+              >
+              <a href="contact.html" class="nav-links">
+              <!-- <a href="../Contact/contact.html" class="nav-links"> -->
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Contact
+                </li></a
+              >
+            </ul>
+            <div class="burger">
+              <i class="fa fa-bars burger-icon" onclick="openNav()"></i>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <!-- <a href="../Home/index.html">Home</a> -->
+              <a href="index.html">Home</a>
+
+              <!-- <a href="../Aboutus/aboutus.html">About us</a> -->
+              <a href="aboutus.html">About us</a>
+
+              <!-- <a href="../Gallery/gallery.html">Gallery</a> -->
+              <a href="gallery.html">About us</a>
+
+              <!-- <a href="../Contact/contact.html">Contact</a> -->
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div style="height: 100%; padding: 20px 0 90px 0">
+        <p
+          class="features-header"
+          style="
+            color: white;
+            text-align: center;
+            font-weight: 800;
+            padding: 100px 20px 20px 20px;
+          "
+          data-aos="fade-right"
+        >
+          GALLERY
+        </p>
+        <div style="display:flex;justify-content:center">
+        <div style="max-width:1400px">
+          <div class="images-container" style="display: flex;justify-content:center;flex-wrap:wrap">
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+            <img
+              src="./Resources/gym_gallery.jpeg"
+              alt=""
+              style="margin:7px"
+              class="gallery-img-resp"
+              data-aos="fade-up"
+            />
+          </div>
+        </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div style="padding: 15px">
+            <div style="display: flex; padding-bottom: 15px">
+              <img
+                src="./Resources/RD Fitness Logo.jpg"
+                width="60px"
+                height="50px"
+                alt=""
+                style="margin-top: 5px"
+              />
+              <div
+                class="vl"
+                style="margin-left: 10px; margin-right: 10px"
+              ></div>
+              <div style="color: #86c232; font-weight: bold">
+                <p>RD</p>
+                <p>FITNESS</p>
+                <p>ZONE</p>
+              </div>
+            </div>
+            <div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-phone"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                +91 9595441100
+              </div>
+              <div class="footer-text">
+                <i class="fa-brands fa-whatsapp" style="color: #86c232"></i> +91
+                9595191100
+              </div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-envelope"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                RD99@yahoo.com
+              </div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-map-marker"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                Shreeram Tower ,3rd Floor,Kolki-Shingnapur
+                Rd,Phaltan,Dist.Satara-415523
+              </div>
+            </div>
+          </div>
+          <div class="footer-end" style="margin-top: 20px">
+            <p style="color: white; text-align: center">
+              All rights reserved | Copyright ©RD Fitness Zone
+            </p>
+            <p style="color: white; text-align: center;margin-top:20px">Developed by saifm170701@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+  </body>
+  <script src="./scriptg.js"></script>
+</html>

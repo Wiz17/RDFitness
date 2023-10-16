@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./stylec.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body style="background-color: #222629">
+    <div
+      id="loading"
+      style="
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      "
+    >
+      <div class="opposites">
+        <div class="opposites bl"></div>
+        <div class="opposites tr"></div>
+        <div class="opposites br"></div>
+        <div class="opposites tl"></div>
+      </div>
+    </div>
+    <div id="web">
+      <nav class="nav">
+        <div class="nav-div">
+          <a href="index.html">
+            <!-- src="../Resources/RD Fitness Logo.jpg" -->
+
+            <div class="logo" style="display: flex">
+              <img
+                src="./Resources/RD Fitness Logo.jpg"
+                width="60px"
+                height="50px"
+                alt=""
+                style="margin-top: 5px"
+              />
+              <div
+                class="vl"
+                style="margin-left: 10px; margin-right: 10px"
+              ></div>
+              <div style="color: #86c232; font-weight: bold">
+                <p>RD</p>
+                <p>FITNESS</p>
+                <p>ZONE</p>
+              </div>
+            </div>
+          </a>
+          <div class="nav-contents">
+            <ul class="nav-contents-list">
+              <!-- <a href="../Home/index.html" class="nav-links"> -->
+                <a href="index.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">Home</li></a
+              >
+              <!-- <a href="../Aboutus/aboutus.html" class="nav-links"> -->
+                <a href="aboutus.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  About us
+                </li></a
+              >
+              <!-- <a href="../Gallery/gallery.html" class="nav-links"> -->
+                <a href="gallery.html" class="nav-links">
+
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Gallery
+                </li></a
+              >
+              <a href="contact.html" class="nav-links">
+              <!-- <a href="../Contact/contact.html" class="nav-links"> -->
+                <li class="nav-content-list-1" id="nav-content-id">
+                  Contact
+                </li></a
+              >
+            </ul>
+            <div class="burger">
+              <i class="fa fa-bars burger-icon" onclick="openNav()"></i>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <!-- <a href="../Home/index.html">Home</a> -->
+              <a href="index.html">Home</a>
+
+              <!-- <a href="../Aboutus/aboutus.html">About us</a> -->
+              <a href="aboutus.html">About us</a>
+
+              <!-- <a href="../Gallery/gallery.html">Gallery</a> -->
+              <a href="gallery.html">About us</a>
+
+              <!-- <a href="../Contact/contact.html">Contact</a> -->
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div style="display:flex;justify-content:center"> -->
+
+      <div
+        style="
+          max-height: 100%;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.7)
+            ),
+            url('./Resources/header_contact.jpg');
+          background-position: center;
+
+          background-size:cover
+        "
+      >
+        <div class="background">
+          <div class="container" data-aos="fade-right">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>CONTACT</span>
+                    <span>US</span>
+                  </div>
+                  <div class="app-contact">CONTACT INFO : +91-9595441100</div>
+                </div>
+                <div class="screen-body-item">
+                  <form autocomplete="off" name="google-sheet" id="form1">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input
+                          type="text"
+                          name="Name"
+                          class="app-form-control"
+                          placeholder="NAME"
+                          value=""
+                          required
+                        />
+                      </div>
+                      <div class="app-form-group">
+                        <input
+                          type="text"
+                          name="Email"
+                          class="app-form-control"
+                          placeholder="EMAIL"
+                          required
+                        />
+                      </div>
+                      <div class="app-form-group">
+                        <input
+                          type="number"
+                          name="Mobile"
+                          class="app-form-control"
+                          placeholder="CONTACT NO"
+                          required
+                        />
+                      </div>
+                      <div class="app-form-group message">
+                        <input
+                          type="text"
+                          name="Message"
+                          class="app-form-control"
+                          placeholder="MESSAGE"
+                          required
+                        />
+                      </div>
+                      <div class="app-form-group buttons">
+                        <!-- <button class="app-form-button">CANCEL</button> -->
+                        <button
+                          type="submit"
+                          name="submit"
+                          class="app-form-button"
+                          value="SUBMIT"
+                        >
+                          SUBMIT
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- <div class="map" style="margin-top:30px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30251.37443896216!2d73.74703524346926!3d18.60008828213761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97fee555555%3A0x57365e1d3dcb8cf5!2sGinger%20Pune%20Wakad!5e0!3m2!1sen!2sin!4v1692085558469!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <div class="loc-main"style="display: flex; justify-content: center">
+        <div class="locations" style="max-width: 1400px">
+          <p
+            class="features-header"
+            style="
+              color: white;
+              text-align: center;
+              font-weight: 800;
+              padding: 40px 20px 20px 20px;
+            "
+            data-aos="fade-right"
+          >
+            OUR LOCATIONS
+          </p>
+          
+          <div  class="loc-card-resp">
+            <div
+              class="loc-card"
+              style="margin: 5px; background-color: #111212"
+              data-aos="zoom-in"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15179.429508064812!2d74.4395399!3d17.9853713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3a5be57fc1c03%3A0x6a6a2df8348887e!2sRD%20FITNESS%20ZONE%20PHALTAN!5e0!3m2!1sen!2sin!4v1697176665919!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <h1 style="color: white; padding: 20px">
+                RD Fitness Zone,Phaltan
+              </h1>
+              <div style="display: flex; padding: 20px">
+                <i
+                  class="fa fa-location-dot"
+                  style="color: #86c232; margin: 3px"
+                  aria-hidden="true"
+                ></i>
+                <p style="color: white">
+                  Shreeram Tower ,3rd Floor,Kolki-Shingnapur
+                  Rd,Phaltan,Dist.Satara-415523
+                </p>
+              </div>
+            </div>
+            <div
+              class="loc-card"
+              style=" margin: 5px; background-color: #111212"
+              data-aos="zoom-in"
+
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.1310817677554!2d73.99697947379778!3d17.691266793982702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2398671692b31%3A0x2e53eede7d6ac89b!2sRD%20FITNESS%20SATARA!5e0!3m2!1sen!2sin!4v1697177103147!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <h1 style="color: white; padding: 20px">RD Fitness,Satara</h1>
+              <div style="display: flex; padding: 20px">
+                <i
+                  class="fa fa-location-dot"
+                  style="color: #86c232; margin: 3px"
+                  aria-hidden="true"
+                ></i>
+                <p style="color: white">
+                  1ST FLOOR,GAYATRI SALES, New Radhika Rd, near HOTEL RADHIKA
+                  PALACE, Satara, Maharashtra 415002
+                </p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="social-meadia" style="padding:20px">
+        <div>
+          <div class="text-sm">CONNECT US ON</div>
+          <div class="logos-sm" style="text-align: center">
+            <a href="https://wa.me/+919595441100" style="color: white"
+              ><i
+                style="margin: 5px"
+                class="fab fa-whatsapp logo-hover"
+              ></i
+            ></a>
+
+            <a
+              href="https://www.facebook.com/rppradipdada"
+              style="color: white"
+              ><i
+                style="margin: 5px"
+                class="fab fa-facebook logo-hover"
+              ></i
+            ></a>
+            <a
+              href="https://www.instagram.com/rd_fitness_phaltan/"
+              style="color: white"
+              ><i class="fab fa-instagram logo-hover"></i
+            ></a>
+            <a href="#" style="color: white"
+              ><i
+                style="margin: 5px"
+                class="fab fa-youtube logo-hover"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div style="padding: 15px">
+            <div style="display: flex; padding-bottom: 15px">
+              <img
+                src="./Resources/RD Fitness Logo.jpg"
+                width="60px"
+                height="50px"
+                alt=""
+                style="margin-top: 5px"
+              />
+              <div
+                class="vl"
+                style="margin-left: 10px; margin-right: 10px"
+              ></div>
+              <div style="color: #86c232; font-weight: bold">
+                <p>RD</p>
+                <p>FITNESS</p>
+                <p>ZONE</p>
+              </div>
+            </div>
+            <div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-phone"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                +91 9595441100
+              </div>
+              <div class="footer-text">
+                <i class="fa-brands fa-whatsapp" style="color: #86c232"></i> +91
+                9595191100
+              </div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-envelope"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                RD99@yahoo.com
+              </div>
+              <div class="footer-text">
+                <i
+                  class="fa fa-map-marker"
+                  style="color: #86c232"
+                  aria-hidden="true"
+                ></i>
+                Shreeram Tower ,3rd Floor,Kolki-Shingnapur
+                Rd,Phaltan,Dist.Satara-415523
+              </div>
+            </div>
+          </div>
+          <div class="footer-end" style="margin-top: 20px">
+            <p style="color: white; text-align: center">
+              All rights reserved | Copyright ©RD Fitness Zone
+            </p>
+            <p style="color: white; text-align: center;margin-top:20px">Developed by saifm170701@gmail.com</p>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+  </body>
+  <script src="./scriptc.js"></script>
+</html>
