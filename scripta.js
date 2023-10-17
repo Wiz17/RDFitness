@@ -28,7 +28,7 @@ window.addEventListener("scroll", function () {
     counterEffect2(targetNumber2, interval2);
     counterEffect3(targetNumber3, interval3);
   }
-  if (scrollPosition >= 2635 && p  && height>=3000) {
+  if (scrollPosition >= 2735 && p  && height>=3000) {
     p=false;
     console.log('p exec');
     counterEffect(targetNumber, interval);
