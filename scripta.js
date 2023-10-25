@@ -3,12 +3,13 @@ var p=true;
 var height=document.body.scrollHeight;
 // console.log(window.location.hash);
 window.addEventListener("scroll", function () {
+  // counterScroll();
   var navbar = document.querySelector(".nav");
   var navContent = document.querySelectorAll(".nav-content-list-1");
   var scrollPosition = window.scrollY;
-  console.log(height);
+  // console.log(height);
   var changeColorPosition = 25; // Scroll position at which to change the color
-  console.log(scrollPosition);
+  // console.log(scrollPosition);
   if (scrollPosition > changeColorPosition) {
     navbar.style.backgroundColor = "black"; // Change to the desired color
     // navContent.forEach(function (e){
@@ -20,21 +21,27 @@ window.addEventListener("scroll", function () {
     //     e.style.color = "black";
     //   })
   }
+  const box = document.querySelector('.counter');
+  const rect = box.getBoundingClientRect();
+
   
-  if (scrollPosition >= 1290 && k &&height<2500) {
+  if (k && rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)) {
     k=false;
-    console.log('K exec');
+    // console.log('K exec');
     counterEffect(targetNumber, interval);
     counterEffect2(targetNumber2, interval2);
     counterEffect3(targetNumber3, interval3);
   }
-  if (scrollPosition >= 2500 && p  && height>=3000) {
-    p=false;
-    console.log('p exec');
-    counterEffect(targetNumber, interval);
-    counterEffect2(targetNumber2, interval2);
-    counterEffect3(targetNumber3, interval3);
-  }
+  // if (scrollPosition >= 2635 && p  && height>=3000) {
+  //   p=false;
+  //   // console.log('p exec');
+  //   counterEffect(targetNumber, interval);
+  //   counterEffect2(targetNumber2, interval2);
+  //   counterEffect3(targetNumber3, interval3);
+  // }
 });
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -101,5 +108,6 @@ window.addEventListener("load", function () {
   var loadingOverlay = document.getElementById("loading");
   var web = (document.getElementById("web").style.display = ""); 
   loadingOverlay.style.display = "none";
-  console.log("loading....");
+  // console.log("loading....");
 });
+
