@@ -1,379 +1,117 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  body{
-    background-color: #f1f1f1;
-  }
-
-  .nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    transition: background-color 0.3s;
-    z-index: 99;
-    /* box-shadow: 1px 1px 10px 1px; */
-  }
-  .nav-div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  
-  }
-  .nav-contents-list {
-    display: none;
-  }
-  .nav-content-list-1 {
-    padding-left: 35px;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    color:white;
-
-    cursor: pointer;
-  }
-  .nav-content-list-1:hover{
-    color:#86C232;
-  }
-  .logo {
-    padding: 15px;
-    /* font-size: 30px;
-    color: black;
-    font-family: 'Lato', sans-serif;
-    margin-left: 20px; */
-    cursor: pointer;
-
+var k = true;
+var p = true;
+var height = document.body.scrollHeight;
+// console.log(window.location.hash);
+window.addEventListener("scroll", function () {
+  // counterScroll();
+  var navbar = document.querySelector(".nav");
+  var navContent = document.querySelectorAll(".nav-content-list-1");
+  var scrollPosition = window.scrollY;
+  // console.log(height);
+  var changeColorPosition = 25; // Scroll position at which to change the color
+  // console.log(scrollPosition);
+  if (scrollPosition > changeColorPosition) {
+    navbar.style.backgroundColor = "black"; // Change to the desired color
+    // navContent.forEach(function (e){
+    //   e.style.color = "white";
+    // })
+  } else {
+    navbar.style.backgroundColor = "transparent"; // Change to the initial color
+    //   navContent.forEach(function (e){
+    //     e.style.color = "black";
+    //   })
   }
   
-  .nav-contents {
-    margin-right: 20px;
+  var sectionElement = document.getElementById("counterid");
+  if (isElementInViewport(sectionElement)&&k) {
+    // The section is in the viewport.
+    k=false;
+    console.log("Section is in the viewport");
+    counterEffect(targetNumber, interval);
+    counterEffect2(targetNumber2, interval2);
+    counterEffect3(targetNumber3, interval3);
+  } else {
+    // The section is not in the viewport.
+    console.log("Section is not in the viewport");
   }
+});
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align: center;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  .burger-icon {
-    padding: 30px;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-  }
-  .burger-icon:hover{
-    color:#86C232
-  }
-  .vl {
-    border-left: 1px solid white;
-    
-  }
+    // Check if the top and bottom of the element are within the viewport
+    var isVerticalInView = (rect.top <= windowHeight) && (rect.bottom >= 0);
 
-  @media all and (min-width: 1022px) {
+    // Check if the left and right of the element are within the viewport
+    var isHorizontalInView = (rect.left <= windowWidth) && (rect.right >= 0);
 
+    return isVerticalInView && isHorizontalInView;
+}
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
 
-    .nav-contents-list {
-      list-style-type: none;
-      display: flex;
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+///////trainers count////////////////////////////
+function counterEffect(targetNumber, interval) {
+  let currentNumber = 1500;
+  const counterInterval = setInterval(() => {
+    document.getElementById("trainers-ct").textContent = currentNumber;
+    // console.log(currentNumber);
+    currentNumber++;
+
+    if (currentNumber > targetNumber) {
+      clearInterval(counterInterval);
     }
-    .burger{
-      display: none;
+  }, interval);
+}
+
+const targetNumber = 2018; // Replace with your desired target number
+const interval = 1; // 2000 milliseconds = 2 seconds
+
+///////area  count////////////////////////////
+
+function counterEffect2(targetNumber, interval) {
+  let currentNumber = 2500;
+  const counterInterval = setInterval(() => {
+    document.getElementById("area-ct").textContent = currentNumber + "+";
+    // console.log(currentNumber);
+    currentNumber++;
+
+    if (currentNumber > targetNumber) {
+      clearInterval(counterInterval);
     }
-  
-  }
+  }, interval);
+}
 
-  /* //////////////////////////about us div//////////////////////// */
+const targetNumber2 = 3000; // Replace with your desired target number
+const interval2 = 1; // 2000 milliseconds = 2 seconds
 
-  .counter {
-    /* display: flex; */
-    background-color: black;
-    padding: 25px 10px 25px 10px;
-    /* justify-content: space-around; */
-  }
-  .aboutus {
-    margin-top: 80px;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* .aboutus-2{
-      width: 30%;
-  } */
-  
-  .img-3 {
-    width: 90%;
-    height: 400px;
-  }
-  
-  @media all and (min-width: 1261px)  {
-    .aboutus-1-1 {
-      display: flex;
-      width: 60%;
+///////clients  count////////////////////////////
+
+function counterEffect3(targetNumber, interval) {
+  let currentNumber = 200;
+  const counterInterval = setInterval(() => {
+    document.getElementById("clients-ct").textContent = currentNumber + "+";
+    // console.log(currentNumber);
+    currentNumber++;
+
+    if (currentNumber > targetNumber) {
+      clearInterval(counterInterval);
     }
-    .counter{
-      display: flex;
-      justify-content: space-around;
-    }
-    .aboutus {
-      justify-content: center;
-    }
-
-    .aboutus-1{
-      width: 50%;
-    }
-    .aboutus-2{
-      width: 50%;
-    }
-    .story-text {
-      margin-top: 200px;
-    }
-    .aboutus-3 {
-      width: 30%;
-      margin-left: 15px;
-    }
-  }
-  
-  @media all and (min-width: 819px) and (max-width: 1260px) {
-    .aboutus-1-1 {
-      width: 40%;
-    }
-    .counter{
-      display: flex;
-      justify-content: space-around;
-    }
-    .aboutus-3 {
-      width: 40%;
-    }
-    .aboutus {
-      justify-content: space-around;
-    }
-    .story-text {
-      margin-top: 200px;
-    }
-    
-  }
-  @media all and (min-width: 100px) and (max-width: 819px) {
-    .story-text {
-      margin-top: 50px;
-    }
-    .aboutus-img{
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-      object-position: top center;
-    }
-    .counter-1{
-      display: flex;
-      justify-content: flex-start;
-    }
-    .counter-2{
-      display: flex;
-      justify-content: center;
-    }
-    .counter-3{
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-  }
-  /* //////////////////////////about us div//////////////////////// */
- /* //////////////////footer////////////////// */
-
-footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./Resources/footer_img.png");
-  /* height: 100%; */
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-.footer-text {
-  color: white;
-  font-size: 17px;
-  margin-top: 10px;
-}
-.footer-end {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.footer-img {
-  width: 300px;
-}
-@media all and (min-width: 150px) and (max-width: 700px) {
-  .footer-text {
-    font-size: 15px;
-  }
-  .footer-img {
-    width: 200px;
-  }
-}
-@media all and (min-width: 701px)  {
-  .routines {
-    display: flex;
-  }
-  .load {
-    width: 50%;
-  }
-  .font-adj {
-    font-size: 20px;
-  }
-}
-/* //////////////////////////////////////////////////\ */
-
-/* ////////////////////additional responviveness//////////////////// */
-
-/* @media all and (min-width: 801px) and (max-width: 1500px) {
-
-
-
-} */
-@media all and (min-width:801px){
-  .img-abt{
-    width:50%
-  }
-  .info{
-    width:40%
-  
-  }
-  .about-us-content-resp{
-    display:flex;
-    justify-content:space-around;
-  }
-}
-@media all and (min-width: 150px) and (max-width: 800px) {
-
-  .img-abt{
-    width:95%
-  }
-  .info{
-    width:90%
-  
-  }
-}
-@media all and (min-width: 150px) and (max-width: 460px) {
-
-  .info-about-us{
-    font-size:25px
-  }
-
-
-}
-@media all and (min-width: 461px) and (max-width: 1500px) {
-
-
-  .info-about-us{
-    font-size:30px
-  }
-}
-@media all and (min-width: 1400px)  {
-.resp-ex-large-sc{
-  display:flex;
-  justify-content:center;
+  }, interval);
 }
 
-  }
-/* ////////////////////additional responviveness//////////////////// */
-/* /////////////css for loading///////////////// */
-.opposites {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  
-}
-.opposites {
-  animation: opposites 2.5s ease-out 0s infinite;  
-}
-.tl, .tr, .br, .bl {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-}
-.tl, .tr {
-  top: 0; 
-}
-.tr, .br {
-  left: 30px; 
-}
-.tl, .br {
-  animation: tlbr 2.5s ease-out 0s infinite;
-}
-.br, .bl {
-  top: 30px; 
-}
-.tl, .bl {
-  left: 0; 
-}
-.tr, .bl {
-  animation: trbl 2.5s ease-out 0s infinite;
-}
-.tl {
-  background: red;
-  transform-origin: bottom right;
-}
-.tr {
-  background: green; 
-  transform-origin: bottom left;
-}
-.br {
-  background: dodgerblue; 
-  transform-origin: top left;
-}
-.bl {
-  background: gold; 
-  transform-origin: top right;
-}
-
-@keyframes tlbr {
-  0% {transform: rotate(0);}
-  20% {transform: rotate(90deg);}
-  40% {transform: rotate(90deg);}
-  60% {transform: rotate(0);}
-}
-@keyframes trbl {
-  20% {transform: rotate(0);}
-  40% {transform: rotate(90deg);}
-  60% {transform: rotate(90deg);}
-  80% {transform: rotate(0);}
-}
-@keyframes opposites {
-  80% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
-}
-
-
+const targetNumber3 = 500; // Replace with your desired target number
+const interval3 = 5; // 2000 milliseconds = 2 seconds
+window.addEventListener("load", function () {
+  // Website has finished loading, hide the loading overlay
+  var loadingOverlay = document.getElementById("loading");
+  var web = (document.getElementById("web").style.display = "");
+  loadingOverlay.style.display = "none";
+  // console.log("loading....");
+});
