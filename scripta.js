@@ -1,6 +1,6 @@
-var k=true;
-var p=true;
-var height=document.body.scrollHeight;
+var k = true;
+var p = true;
+var height = document.body.scrollHeight;
 // console.log(window.location.hash);
 window.addEventListener("scroll", function () {
   // counterScroll();
@@ -21,28 +21,33 @@ window.addEventListener("scroll", function () {
     //     e.style.color = "black";
     //   })
   }
-  const box = document.querySelector('.counter');
-  const rect = box.getBoundingClientRect();
-
   
-  if (k && rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)) {
+  var sectionElement = document.getElementById("counterid");
+  if (isElementInViewport(sectionElement)&&k) {
+    // The section is in the viewport.
     k=false;
-    // console.log('K exec');
+    console.log("Section is in the viewport");
     counterEffect(targetNumber, interval);
     counterEffect2(targetNumber2, interval2);
     counterEffect3(targetNumber3, interval3);
+  } else {
+    // The section is not in the viewport.
+    console.log("Section is not in the viewport");
   }
-  // if (scrollPosition >= 2635 && p  && height>=3000) {
-  //   p=false;
-  //   // console.log('p exec');
-  //   counterEffect(targetNumber, interval);
-  //   counterEffect2(targetNumber2, interval2);
-  //   counterEffect3(targetNumber3, interval3);
-  // }
 });
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    // Check if the top and bottom of the element are within the viewport
+    var isVerticalInView = (rect.top <= windowHeight) && (rect.bottom >= 0);
+
+    // Check if the left and right of the element are within the viewport
+    var isHorizontalInView = (rect.left <= windowWidth) && (rect.right >= 0);
+
+    return isVerticalInView && isHorizontalInView;
+}
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
@@ -106,8 +111,7 @@ const interval3 = 5; // 2000 milliseconds = 2 seconds
 window.addEventListener("load", function () {
   // Website has finished loading, hide the loading overlay
   var loadingOverlay = document.getElementById("loading");
-  var web = (document.getElementById("web").style.display = ""); 
+  var web = (document.getElementById("web").style.display = "");
   loadingOverlay.style.display = "none";
   // console.log("loading....");
 });
-
