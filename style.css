@@ -327,7 +327,7 @@ footer {
     font-size:40px;
   }
 }
-@media screen and (min-width:150px) and (max-width:800px){
+@media screen and (min-width:150px) and (max-width:1000px){
 
   .cards-resp{
     display: flex;
@@ -335,6 +335,15 @@ footer {
   }
   .cards{
     width: 80%;
+  }
+}
+@media screen and (min-width:1001px) {
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
   }
 }
 @media screen and (min-width:150px) and (max-width:600px){
@@ -372,15 +381,7 @@ footer {
   }
 }
 
-@media screen and (min-width:801px) {
 
-  .cards{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-  }
-}
 @media screen and (min-width:1400px){
 
   .header-resp-max-scr{
@@ -465,6 +466,9 @@ footer {
   80% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
+
+
+
 
 
 
