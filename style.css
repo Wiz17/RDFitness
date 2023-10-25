@@ -103,7 +103,7 @@
     
   }
   
-  @media all and (min-width: 1022px){
+  @media screen and (min-width: 1022px){
 
 
     .nav-contents-list {
@@ -126,7 +126,7 @@
     align-items: center;
     /* justify-content: center; */
   }
-  @media all and (min-width:150px)and (max-width: 601px){
+  @media screen and (min-width:150px)and (max-width: 601px){
 
   .header-text{
    
@@ -158,7 +158,7 @@
     font-size:50px ;
   }
 
-@media all and (min-width: 500px) and (max-width: 700px) {
+@media screen and (min-width: 500px) and (max-width: 700px) {
 
     .header-text-1{
         margin-left: 20px;
@@ -227,7 +227,7 @@ figure {
     font-size: 50px;
   
   }
-@media all and (min-width: 150px) and (max-width: 700px) {
+@media screen and (min-width: 150px) and (max-width: 700px) {
   .routines-1-1{
     display: none;
   }
@@ -239,7 +239,7 @@ figure {
     font-size: 15px;
   } */
   }
-  @media all and (min-width: 701px) and (max-width: 2000px) {
+  @media screen and (min-width: 701px) and (max-width: 2000px) {
     .routines{
       display: flex;
     }
@@ -273,7 +273,7 @@ footer {
 .footer-img {
   width: 300px;
 }
-@media all and (min-width: 150px) and (max-width: 700px) {
+@media screen and (min-width: 150px) and (max-width: 700px) {
   .footer-text {
     font-size: 15px;
   }
@@ -284,7 +284,7 @@ footer {
     margin-top: 15px;
   }
 }
-@media all and (min-width: 701px)  {
+@media screen and (min-width: 701px)  {
   .routines {
     display: flex;
   }
@@ -298,20 +298,20 @@ footer {
 /* //////////////////////////////////////////////////\ */
 /* ////////////////////some additional responsive changes'//////////////// */
 
-@media all and (min-width:500px) and (max-width:700px){
+@media screen and (min-width:500px) and (max-width:700px){
   .opa{
     font-size: 35px;
   }
   
 
 }
-@media all and (min-width:500px) and (max-width:1500px){
+@media screen and (min-width:500px) and (max-width:1500px){
 .header-gym-name{
   margin-left: 8px;
 
 }
 }
-@media all and (min-width:150px) and (max-width:500px){
+@media screen and (min-width:150px) and (max-width:500px){
   .opa{
     font-size: 25px;
   }
@@ -322,12 +322,12 @@ footer {
 
 }
 
-@media all and (min-width:700px) and (max-width:920px){
+@media screen and (min-width:700px) and (max-width:920px){
   .opa{
     font-size:40px;
   }
 }
-@media all and (min-width:150px) and (max-width:800px){
+@media screen and (min-width:150px) and (max-width:800px){
 
   .cards-resp{
     display: flex;
@@ -337,7 +337,7 @@ footer {
     width: 80%;
   }
 }
-@media all and (min-width:150px) and (max-width:600px){
+@media screen and (min-width:150px) and (max-width:600px){
 
   .cards{
     width: 95%;
@@ -355,12 +355,12 @@ footer {
     padding:40px 10px 40px 10px
   }
 }
-@media all and (min-width:601px){
+@media screen and (min-width:601px){
   .features-header{
     font-size: 40px;
   }
 }
-@media all and (min-width:601px){
+@media screen and (min-width:601px){
   
   .header{
     height: 100vh;
@@ -372,7 +372,7 @@ footer {
   }
 }
 
-@media all and (min-width:801px) {
+@media screen and (min-width:801px) {
 
   .cards{
     display: flex;
@@ -381,7 +381,7 @@ footer {
 
   }
 }
-@media all and (min-width:1400px){
+@media screen and (min-width:1400px){
 
   .header-resp-max-scr{
      display: flex;
